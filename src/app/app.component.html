@@ -1,5 +1,7 @@
 <main>
   <app-header></app-header>
-  <app-product-detail></app-product-detail>
-  <app-count></app-count>
+
+  <app-product-detail [products]="products" (update)="update()"></app-product-detail>
+
+  <app-count [subtotal]="subtotal"></app-count>
 </main>
